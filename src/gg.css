@@ -1,0 +1,63 @@
+.gg{
+   display: flex; 
+   height: 100vh;
+}
+ .a{
+text-align: center;
+width: 600px;
+ }
+ button{
+   margin-left: 5px;
+ }
+  .w{
+    display: inline-flex; 
+    justify-content: space-evenly;
+    
+  }
+  .p{
+    background-color: rgb(104, 196, 221);
+    margin-bottom: 5px;
+    width: 250px;
+    margin-right: 10px;
+   
+  }
+.tc{
+  text-align: center;
+}
+.bck{
+ background-color: gray;
+padding-left: 5px;
+padding-right: 5px;
+
+}
+.bw{
+  background-color: white;
+
+ 
+}
+.wc{
+  width: 100%;
+}
+
+.email,.subject{
+  width: 400px;
+}
+
+.m{
+  margin-left: 200px;
+}
+.r{
+  margin-left: 350px;
+}
+
+.tw{
+  max-width: 500px;
+}
+.im{
+  padding-left: 5px;
+padding-right: 5px;
+}
+
+.sm{
+  margin-right: 150px;
+}
