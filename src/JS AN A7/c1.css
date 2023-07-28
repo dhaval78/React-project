@@ -1,0 +1,27 @@
+.b1 {
+    background-color: grey;
+    color: white;
+  }
+  .b2,
+  .b3,
+  .b4 {
+    padding: 5px;
+  }
+  .b2 {
+  
+    background-color: green;
+    color: white;
+  }
+  .b4 {
+    background-color: red;
+    color: white;
+  }
+  .b3 {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: yellow;
+    color: black;
+  }
+  .db1{
+    width: 5%;
+  }

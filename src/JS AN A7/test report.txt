@@ -1,0 +1,13 @@
+Section A
+1.the UI is made according to video and the text box is read only when the edit button is clicked and the screenshots are attached
+2.the error is displayed when the text box is left empty after clicking on submit and the alert is shown along with the error to enter the details below the text boxes or dropdown
+
+Section B
+1.the js file data.js is working fine with all the test cases provided in the question and screenshots of output are also attached.
+Section C
+1. it is incomplete
+
+Section E
+1. the filter is working,pagination is working according to video but the checkboxes and radio buttons does not reset
+when the navbar link is clicked
+2.the Ui is according to the video.
