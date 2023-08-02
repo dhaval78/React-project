@@ -12,13 +12,13 @@ class Navbar extends Component {
           <ul className="navbar-nav">
             <li className="navbar-brand">MyCompany</li>
             <li className="nav-link" >
-              <NavLink to="/emps/All" >All</NavLink>
+              <NavLink to="/emps/All"  >All</NavLink>
             </li>
             <li className="nav-link">
-              <NavLink to="/emps/New Delhi" >New Delhi</NavLink>
+              <NavLink to="/emps/New Delhi"  >New Delhi</NavLink>
             </li>
             <li className="nav-link">
-              <NavLink to="/emps/Noida" >Noida</NavLink>
+              <NavLink to="/emps/Noida"  >Noida</NavLink>
             </li>
           </ul>
         </div>

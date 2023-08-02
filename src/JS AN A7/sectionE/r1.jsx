@@ -132,9 +132,7 @@ const employees = [
   ]
 
 class App1 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+  state = {
       selectedLocation: "All",
       selectedDesignation: '',
       selectedDepartment: [],
@@ -143,7 +141,7 @@ class App1 extends Component {
       employeesPerPage: 2,
       filteredEmployees: [],
     };
-  }
+  
 
   componentDidMount() {
     
@@ -243,11 +241,11 @@ class App1 extends Component {
   };
 
   handleNextPage = () => {
-    const { currentPage, employeesPerPage, employees } = this.state;
-    const totalEmployees = employees.length;
+    const { currentPage, employeesPerPage, employees,filteredEmployees } = this.state;
+    const totalEmployees = filteredEmployees.length;
     const lastPage = Math.ceil(totalEmployees / employeesPerPage);
   
-    if (currentPage < lastPage) {
+    if (currentPage < lastPage+5) {
       this.setState((prevState) => {
         const nextPage = prevState.currentPage + 1;
         this.updatePageInUrl(nextPage);
@@ -255,7 +253,7 @@ class App1 extends Component {
         const indexOfFirstEmployee = nextPage * employeesPerPage - employeesPerPage;
   
    
-        const indexOfLastEmployee = Math.min(nextPage * employeesPerPage, totalEmployees);
+        const indexOfLastEmployee = Math.min((nextPage + 5) * employeesPerPage, totalEmployees);
   
      
         const nextCurrentEmployees = prevState.filteredEmployees.slice(
@@ -301,6 +299,7 @@ class App1 extends Component {
     const indexOfFirstEmployee = indexOfLastEmployee - employeesPerPage;
     const currentEmployees = filteredEmployees.slice(indexOfFirstEmployee, indexOfLastEmployee);
 
+console.log(filteredEmployees)
 
     const lastPage = Math.ceil(totalEmployees / employeesPerPage);
 
@@ -422,7 +421,7 @@ class App1 extends Component {
             <button onClick={this.handlePrevPage} style={{float:"left"}} className='btn btn-primary'  disabled={currentPage === 0}>
               Prev
             </button>
-            <button onClick={this.handleNextPage} style={{float:"right"}} className='btn btn-primary' disabled={currentPage === lastPage - 1}>
+            <button onClick={this.handleNextPage} style={{float:"right"}} className='btn btn-primary' disabled={filteredEmployees.length<lastPage+5?currentPage===lastPage+2:currentPage === lastPage+5}>
               Next
             </button>
             </div>
