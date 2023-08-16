@@ -1,0 +1,11 @@
+1.the UI of the app is according to the video.
+2. the Route is used to different components of navbar for settings and for my books for storing the books when add to my books is clicked in the books component.
+3.the screenshots of api calls used in postman is attached as well and the query params used are filter,startIndex,printType,maxresults,orderBy and language.
+4.No data will be displayed if there are not items to be displayed in both the my book and books components.
+5.Add to my book functionality is working fine according to the video.
+6.the settings is working fine according to the video checkboxes are hiding the left panel components according to the checkboxes checked.
+7. the screenshots of the app is also attached as well.
+8.when homepage is visited  search button along with the textbox is visible.
+9.pagination is working fine according to the video. 
+10. if the author name is not present in the api the text will be blank, if the image is not present then the alternative image will be displayed and if the category is missing then the NA text is displayed.
+11.clicking on book icon will display the search bar again.
