@@ -1,0 +1,3 @@
+the app is built according to the question.
+the error is displayed on submit when the empty string is passed in text boxes.
+the productId and product name is disabled in edit mode.
